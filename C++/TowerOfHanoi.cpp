@@ -1,3 +1,7 @@
+/** 
+Tower Of Hanoi, recursive solution
+**/
+
 #include <iostream>
 using namespace std;
 
