@@ -139,6 +139,7 @@ ipch/
 *.cachefile
 *.VC.db
 *.VC.VC.opendb
+*.vcxproj.filters
 
 # Main Driver program
 main.cpp
