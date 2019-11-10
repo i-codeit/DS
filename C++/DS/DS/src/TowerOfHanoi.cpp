@@ -1,11 +1,10 @@
-/** 
-Tower Of Hanoi, recursive solution
-**/
-
 #include <iostream>
-using namespace std;
+#include "FunctionHeader.h"
 
-void towerOfHanoi(int lenSrc, char srcTower, char destTower, char auxTower) {
+using namespace std;
+using namespace DS;
+
+void DS::towerOfHanoi(int lenSrc, char srcTower, char destTower, char auxTower) {
     
     // Base cases when length is 0 or 1
     if (lenSrc == 0) {
@@ -19,10 +18,4 @@ void towerOfHanoi(int lenSrc, char srcTower, char destTower, char auxTower) {
     towerOfHanoi(lenSrc - 1, srcTower, auxTower, destTower);
     cout << "Moved " << lenSrc << " from " << srcTower <<" to "  << destTower << endl;
     towerOfHanoi(lenSrc - 1, auxTower, destTower, srcTower);
-}
-
-int main() {
-    towerOfHanoi(4, 'A', 'B', 'C');
-    getchar();
-    return 1;
 }
